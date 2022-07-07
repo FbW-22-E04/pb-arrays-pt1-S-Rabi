@@ -1,5 +1,6 @@
 const euroCities = ["Paris", "London", "Valletta", "Prague", "Rome"];
-// euroCities[5] = "secondCity";
+const euroSecondCity = euroCities.slice(1, 2);
+console.log("This is eurosecondary city", euroSecondCity);
 console.log(euroCities);
 euroCities.splice(0, 1, "Berlin");
 console.log(euroCities);
@@ -11,6 +12,9 @@ console.log(euroCities);
 const asianCities = ["Tashkent", "Jakarta", "Istanbul", "Bangkok", "Astana"];
 const worldCities = euroCities.concat(asianCities);
 console.log(worldCities);
+
+console.log("---------------------------------------------");
+
 console.log(worldCities.reverse());
 console.log(euroCities.splice(2, 1));
 // 10: should be solved
